@@ -1,0 +1,154 @@
+/* -------------------------------------------------------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;    
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Re-usable components */
+/* -------------------------------------------------------------------------------- */ 
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Header */
+/* -------------------------------------------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/OmnifoodContents/hero.jpg);
+/*    linear gradient linearly grades, top-down, the image using the colors specified in parenthesis */
+    background-size: cover;
+/*    this will fit the image to be the height of the window*/
+    background-position: center;
+/*    this will center the image horizontally*/
+    height: 100vh;
+/*    this sets the image height to utilize 100% of the viewport height*/
+}
+
+.hero-text-box {
+    position: absolute;
+    /* I think the width should be set to auto, seems to fix ghost white space issue */
+    width: 1140px;
+    top: 50%; /* places this div 50% down into the viewport */
+    left: 50%; /* places this div 50% right into the viewport */
+    transform: translate(-50%, -50%);  
+    /* translates this div to the left by 50% of the distance to the left, and up by 50% of the distance to the top of viewport */
+    
+/*    the top, left, and translate functions will ensure the image always begins 25% of the viewport width in from the left, and always 50%*/
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+    
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Buttons */
+/* -------------------------------------------------------------------------------- */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+
+
+
+
