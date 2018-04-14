@@ -144,7 +144,7 @@ h3 {
 /* -------------------------------------------------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../resources/img/hero.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/hero.jpg);
 /*    linear gradient linearly grades, top-down, the image using the colors specified in parenthesis */
     background-size: cover;
 /*    this will fit the image to be the height of the window*/
@@ -152,6 +152,7 @@ header {
 /*    this will center the image horizontally*/
     height: 100vh;
 /*    this sets the image height to utilize 100% of the viewport height*/
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -299,14 +300,95 @@ header {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* CITY SECTION */
+/* -------------------------------------------------------------------------------- */
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font: 120%;
+    margin-right: 10px;
+    
+    /* secrets to align text and icon */
+
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
     
 }
 
+a:link,
+a:active {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:visited {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    
+}
 /* -------------------------------------------------------------------------------- */
-/* CITY PHOTOS */
+/* CUSTOMER TESTIMONIAL SECTION */
 /* -------------------------------------------------------------------------------- */
 
-.city-photo {
-    width: 100%;
+.section-testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(../../OmnifoodContents/back-customers.jpg);
+    color: #FFF;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 25px;
+    vertical-align: middle;
+    margin-right: 25px;
+}
+
+cite {
+    font: 90%;
+    margin-top: 25px;
     display: block;
 }
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+
