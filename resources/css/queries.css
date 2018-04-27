@@ -36,6 +36,7 @@
     
     .plan-price { font-size: 250%; }
     .contact-form { width: 80%; }
+    .main-nav { display: inherit; }
 }
 
 /* this is for medium phones/small tablets from 481 - 767px */
@@ -45,8 +46,43 @@
     
     .row, .hero-text-box { padding: 0 4%; }
     
-    .col { width: 100%; }
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    
     .main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block; }
+    
+    .main-nav {
+        float: left;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky .mobile-nav-icon  i { color: #555; }
+
+    .section-feature .row {
+        display: block;
+    }
+    
     h1 { font-size: 180%; }
     h2 { font-size: 150%; }
     
@@ -65,7 +101,7 @@
         font-size: 120%;
     }
     
-    .app-screen { transform: translate(-50%, 0%); }
+    .app-screen { -webkit-transform: translate(-50%, 0%); transform: translate(-50%, 0%); }
 }
 
 /* this is for small phones from 0 - 480px */
